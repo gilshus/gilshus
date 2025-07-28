@@ -103,5 +103,45 @@ src="https://www.facebook.com/tr?id=2430320937353574&ev=PageView&noscript=1"
     </a>
   </div>
   <div class="footer">RULETA EN VIVO - SLOTS - APUESTAS</div>
+  <div id="mensajeFlotante" style="
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: sans-serif;
+  z-index: 9999;
+  animation: fadeInOut 6s infinite;
+">
+  María ganó $157.000 hace 1h
+</div>
+
+<script>
+  const mensajes = [
+    "María ganó $157.000 hace 1h",
+    "Juan María ganó $72.600 hace 10 minutos",
+    "Bautista ganó $307.000 hace 3hs",
+    "Raúl ganó $23.400 hace 2 minutos"
+  ];
+
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % mensajes.length;
+    document.getElementById("mensajeFlotante").textContent = mensajes[index];
+  }, 6000);
+</script>
+
+<style>
+  @keyframes fadeInOut {
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+  }
 </body>
 </html>
