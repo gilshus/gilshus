@@ -40,7 +40,7 @@
     }
 
     .bonus-text {
-      font-size: 20px;
+      font-size: 22px;
       margin-bottom: 15px;
     }
 
@@ -48,22 +48,29 @@
       color: #ff00ff;
       font-weight: bold;
     }
+     @keyframes pulso {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 20px #25D366; }
+      50% { transform: scale(1.07); box-shadow: 0 0 40px #25D366; }
+    }
 
     .button-whatsapp {
       margin-top: 0px;
       background: linear-gradient(45deg, #9400d3, #ff00ff);
       color: white;
-      padding: 15px 30px;
+      padding: 22px 45px;
       border: none;
-      border-radius: 25px;
-      font-size: 18px;
+      border-radius: 40px;
+      font-size: 26px;
       cursor: pointer;
       text-decoration: none;
       display: inline-block;
+      animation: pulso 1.4s infinite ease-in-out;
+      transition: all 0.3s ease;
     }
 
     .button-whatsapp:hover {
-      opacity: 0.9;
+      background-color: #1eb25a;
+      transform: scale(1.1);
     }
 
     .footer {
@@ -102,7 +109,7 @@ src="https://www.facebook.com/tr?id=2430320937353574&ev=PageView&noscript=1"
     <p class="highlight">Minimo de carga $1000 y sin límite de retiro</p>
     <p style="margin-top: 10px;">Cajero Nicolás – Tu cajero de confianza 💸</p>
     <a class="button-whatsapp" href="https://wa.me/5491165598521?text=QUIERO%20MI%20BONO%20DE%2025%25%20%F0%9F%94%A5" target="_blank">
-      WHATSAPP💬
+      💬 PEDÍ TU BONO AHORA
     </a>
   </div>
   <div class="footer">RULETA EN VIVO - SLOTS - APUESTAS</div>
